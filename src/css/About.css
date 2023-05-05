@@ -1,7 +1,7 @@
 .About{
     background-color: #f7f7f7;
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSphQ_0SDrJNHYqv55GSmuECNdpSV-DDSzSgA&usqp=CAU');
-    height: 130vh;
+    height: 320vh;
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -106,12 +106,44 @@ a{
 img{
     padding:3px;
     margin-top: 5px;
-    width: 500px;
-    height: 400px;
+    width: 450px;
+    height: 350px;
     margin-left: 50px;
     
 }
 .photo{
 
     margin-left: 100px;
+}
+.content2 {
+    margin-top: 50px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.content2 .photo img{
+    margin-right: 100px;
+}
+.content2 p{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 180px;
+}
+.content p{
+    margin-top: 60px;
+    font-weight: bold;
+}
+.content3{
+    margin-top: 50px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.content3 .photo img{
+    margin-right: 60px;
+    margin-left: 20px;
+}
+.content3 p{
+    margin-top: 130px;
+    font-weight: bold;
 }

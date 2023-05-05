@@ -11,6 +11,7 @@ function Services() {
 
     const [spaces, setSpaces] = useState([])
     const [showSpaces, setShowSpaces] = useState(false)
+    const [isSpaceAvailable, setIsSpaceAvailable] = useState(true); // Add this line
 
     const [periodicals, setPeriodicals] = useState([])
     const [showPeriodicals, setShowPeriodicals] = useState(false)
@@ -37,6 +38,8 @@ function Services() {
 
         const handleShowBooks = () => {
             setShowBooks(true);
+            setShowSpaces(false);
+            setShowPeriodicals(false);
           };
 
 
@@ -66,13 +69,20 @@ function Services() {
 
         const handleShowSpaces = () => {
             setShowSpaces(true);
+            setShowBooks(false);
+            setShowPeriodicals(false);
         }
 
         const handleReserveSpace = () => {
-            setShowSpaces(false);
+          setShowSpaces(false);
+          if (isSpaceAvailable) {
             showRegistrationSpaceForm(true);
-            
-          };
+            setIsSpaceAvailable(false);
+          } else {
+            alert("Sorry! This space is already taken.");
+          }
+        };
+        
 
         function showRegistrationSpaceForm(show) {
             let form = document.getElementById("space-form");
@@ -82,6 +92,8 @@ function Services() {
 
         const handleShowPeriodicals = () => {
             setShowPeriodicals(true);
+            setShowSpaces(false);
+            setShowBooks(false)
         }
 
         const handleReservePeriodical = () => {
@@ -228,7 +240,7 @@ function Services() {
             
                 {showPeriodicals && (
           <>
-          <h1>Periodicals</h1>
+          <h1 className="content-header">Periodicals</h1>
           <div className="books-card">
             {periodicals.map(periodical => (
                 <div className="book-item">
@@ -269,7 +281,9 @@ function Services() {
                 <label for="notes">Additional Notes/Comments:</label>
                 <textarea id="notes" name="notes"></textarea>
 
-                <button type="submit" onClick={() => showPeriodicalsForm(false)}>Submit</button>
+                <button type="submit" onClick={() => {showRegistrationForm(false)
+                alert('Your Periodical-Book has been reserved. Thank You!')
+                }} >Submit</button>
             </form>
             
         </>    

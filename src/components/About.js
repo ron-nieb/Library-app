@@ -37,12 +37,27 @@ function About() {
                 <span>The MindBenders Library is Yale University’s principal source of literary archives, early manuscripts and rare books, and it’s used by students and researchers around the world. Designed by MindBenders Shareholders with the goal of filtering daylight to protect the books, and effective services to there clients the building was completed in 1963 and constructed out of marble and granite sourced from Vermont. </span>
                 {/* <p>With the MindBenders we enable you to acquire for yourself books, spaces and periodicals.</p>
                 <p>To book for any item you require, click on the book now button to start you on your journey of mindbending</p> */}
+              </div>
+              </div>
+            <div className='content2'>
+              <div>
+                <p><span>MindBenders library is home to numerous students and acts as a home for cognitive advancements in a peaceful and serene environment </span></p>
+              </div>
+              <div className='photo'>
+                <img src='https://images.unsplash.com/photo-1635862624756-2f64dd64fd68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGxpYnJhcmllcyUyMHNwYWNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60' alt='library shots'/>
+              </div>
             </div>
+            <div className='content3'>
+              <div className='photo'>
+                <img src='https://images.unsplash.com/photo-1568031806078-63e5b065bc95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGxpYnJhcnklMjBib29rc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60' alt='library shots'/>
+              </div>
+              <div>
+                <p><span>Browse through the mountload of book resources offered by the MindBenders Library with the selection of numerous genres at your fingertips and a whole lot of knowledge to unpack</span></p>
+              </div>
             </div>
+          </div>
             <button className='button'><a href="/services">BOOK NOW</a></button>
           </div>
-        </div>
-  
   )
 }
 
