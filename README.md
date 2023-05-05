@@ -63,8 +63,11 @@ To install and run this project locally, follow these steps:
 * npm i @fortawesome/free-brands-svg-icons
 * npm i @fortawesome/free-solid-svg-icons
 3. Start the API server by running {json-server --watch library.json --port 3000}
-3. Start the development server by running npm start.
 4. Open your browser and navigate to http://localhost:3001 to view the website.
+  Make sure to open the browser to verify that your backend is working before you proceed!
+* http://localhost:3000/books
+* http://localhost:3000/space 
+* http://localhost:3000/periodicals
 
 ## Contributing
 We welcome contributions to the Mind Benders Library project. To contribute, follow these steps:
